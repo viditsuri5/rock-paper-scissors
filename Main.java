@@ -7,12 +7,13 @@ public class Main
 {
     public static void main(String [] args)
     {
-        Player[] players = new Player[2];  // need to update array based on number of players
+        Player[] players = new Player[3];  // need to update array based on number of players
         boolean printsRun = false;   // enable/disable debug print statements.
 
         // Add players to game
         players[0] = new Example1();
         players[1] = new PlayerExample();
+        players[2] = new MJ();
 
         //construct the game with the classes in the players array, calls on play and displays the score
         //DO NOT CHANGE
