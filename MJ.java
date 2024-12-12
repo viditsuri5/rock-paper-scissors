@@ -7,7 +7,7 @@ public class MJ implements Player
     public String move(String [] myMoves, String [] opponentMoves, int myScore, int opponentScore)
     {
         // Find the current move index
-        int moveIndex = getCurrentMoveIndex(opponentMoves);
+        int moveIndex = getMostRecentMoveIndex(opponentMoves);
         // Check that the index is greater than zero to avoid out of bounds error.
         if (moveIndex > 0)
         {
@@ -19,7 +19,7 @@ public class MJ implements Player
     }
 
     // Find out which move the game is on.
-    private int getCurrentMoveIndex(String[] moves)
+    private int getMostRecentMoveIndex(String[] moves)
     {
         // The array will have data for each move, the rest of the array is "null"
         // Count how many elements in the array have data and stop counting when we get a null.
